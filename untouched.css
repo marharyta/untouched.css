@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    border-box: box-sizing;
+}
+
+
+:focus{
+    outline: 0;
+}
+
+/* a lot of websites suffer from overflowing on mobile */
+body{
+    overflow-x: hidden; 
+}
+
+h1, h2, h3, h4, h5, p, span{
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+}
+
+* { all: unset }
+head { display: none }
+
+/* fixes bold font https://stackoverflow.com/questions/28217486/font-renders-thicker-in-browsers*/
+
+/* todo: add https://www.lockedownseo.com/firefox-font-weight-too-bold/ */
+html, body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: antialiased;
+}
+
+input {
+    appearance: none;
+  -webkit-appearance: none;
+}
+
+p {
+    text-align: left;
+    color: black;
+    text-indent: 0;
+    letter-spacing: none;
+    white-space: pre;
+    /*this will literally only work in Firefox*/
+    font-size-adjust: 0.485;
+}
+
+a:link {
+    text-decoration: none;
+  }
+
+/* 
+about box-model, outlines etc
+https://www.w3.org/TR/css-ui-3/ 
+
+
+about values 
+https://www.w3.org/TR/css3-cascade/
+
+
+text-decoration
+
+https://www.w3.org/TR/css-text-decor-3/
+
+*/
+
+/* 
+
+
+https://www.w3.org/TR/css-ui-3/
+*/
